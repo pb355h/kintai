@@ -1,0 +1,10 @@
+$theme-colors: (
+  "primary": #006600,
+);
+$link-color:#3d464d;
+$link-hover-color:#3d464d;
+$link-hover-decoration:none;
+
+@import "override-functions";
+@import "override-variables";
+@import "bootstrap-custom";
