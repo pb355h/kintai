@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="css/all.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -13,101 +13,116 @@
 <body>
 
   <header>
-    <div class="container text-center my-4">
-      <h1 class="h3 font-weight-bold">勤務状況</h1>
+    <div class="container border-bottom pt-4">
+      <h1 class="font-weight-bold text-center">勤務状況</h1>
+      <div class="d-flex justify-content-between py-3">
+        <h5 class="font-weight-bold">飯田佳子さんの部下一覧</h5>
+        <h5 class="font-weight-bold">2020年4月8日</h5>
+      </div>
     </div>
   </header>
-
   <section>
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-12">
-          <h6 class="text-left ml-2">部下一覧</h6>
-          <table class="table">
-            <thead>
-              <tr class="d-flex">
-                <th class="col-2" scope="col">#</th>
-                <th class="col-2" scope="col">出勤予定</th>
-                <th class="col-2" scope="col">開始/終了</th>
-                <th class="col-2" scope="col">体温</th>
-                <th class="col-4" scope="col">その他</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="d-flex">
-                <td class="col-2">石川</th>
-                <td class="col-2">在宅</td>
-                <td class="col-2">9:00/17:30</td>
-                <td class="col-2">36.5</td>
-                <td class="col-4">変化なし</td>
-              </tr>
-              <tr class="d-flex">
-                <td class="col-2">西川</th>
-                <td class="col-2">出勤</td>
-                <td class="col-2">10:00/18:30</td>
-                <td class="col-2">36.7</td>
-                <td class="col-4">変化なし</td>
-              </tr>
-              <tr class="d-flex">
-                <td class="col-2">望月</th>
-                <td class="col-2">在宅</td>
-                <td class="col-2">9:00/17:30</td>
-                <td class="col-2 bg-warning2">36.9</td>
-                <td class="col-4">腹痛</td>
-              </tr>
-              <tr class="d-flex">
-                <td class="col-2">佐藤（匠）</th>
-                <td class="col-2">年休</td>
-                <td class="col-2">--:--/--:--</td>
-                <td class="col-2 bg-danger2 text-danger font-weight-bold">37.0</td>
-                <td class="col-4">発熱</td>
-              </tr>
-              <tr class="d-flex">
-                <td class="col-2">杉山</th>
-                <td class="col-2 bg-info2">未報告</td>
-                <td class="col-2"></td>
-                <td class="col-2"></td>
-                <td class="col-4"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+    <div class="container text-center pt-3 pb-5">
+      <ul class="responsive-table">
+        <li class="table-header">
+          <div class="col col-2">名前</div>
+          <div class="col col-1">出勤予定</div>
+          <div class="col col-2">開始/終了</div>
+          <div class="col col-1">体温</div>
+          <div class="col col-3 text-left">体調</div>
+          <div class="col col-1">登録時間</div>
+        </li>
+        <li class="table-row">
+          <div class="border-right col col-2 font-weight-bold">石川 貴章</div>
+          <div class="border-right col col-1">在宅</div>
+          <div class="border-right col col-2">9:00/17:30</div>
+          <div class="border-right col col-1">36.5</div>
+          <div class="border-right col col-3 text-left">変化なし</div>
+          <div class="col col-1">8:12</div>
+        </li>
+        <li class="table-row">
+          <div class="border-right col col-2 font-weight-bold">西川 貴之</div>
+          <div class="border-right col col-1">出勤</div>
+          <div class="border-right col col-2">10:00/18:30</div>
+          <div class="border-right col col-1">36.7</div>
+          <div class="border-right col col-3 text-left">変化なし</div>
+          <div class="col col-1">8:35</div>
+        </li>
+        <li class="table-row text-warning bg-warning">
+          <div class="border-right border-warning col col-2 font-weight-bold">望月 徹</div>
+          <div class="border-right border-warning col col-1">在宅</div>
+          <div class="border-right border-warning col col-2">9:00/17:30</div>
+          <div class="border-right border-warning col col-1 font-weight-bold">36.9</div>
+          <div class="border-right border-warning col col-3 text-left">腹痛</div>
+          <div class="col col-1">8:09</div>
+        </li>
+        <li class="table-row text-danger bg-danger">
+          <div class="border-right border-danger col col-2 font-weight-bold">佐藤 匠</div>
+          <div class="border-right border-danger col col-1">年休</div>
+          <div class="border-right border-danger col col-2">--:--/--:--</div>
+          <div class="border-right border-danger col col-1 font-weight-bold">37.0</div>
+          <div class="border-right border-danger col col-3 text-left">発熱</div>
+          <div class="col col-1">7:55</div>
+        </li>
+        <li class="table-row">
+          <div class="border-right col col-2 font-weight-bold">杉山 智美</div>
+          <div class="border-right col col-1">出勤</div>
+          <div class="border-right col col-2">9:00/17:30</div>
+          <div class="border-right col col-1">36.5</div>
+          <div class="border-right col col-3 text-left">変化なし</div>
+          <div class="col col-1">8:15</div>
+        </li>
+        <li class="table-row text-info bg-info">
+          <div class="border-right border-info col col-2 font-weight-bold">高野 康一</div>
+          <div class="border-right border-info col col-1 font-weight-bold">未報告</div>
+          <div class="border-right border-info col col-2">--</div>
+          <div class="border-right border-info col col-1">--</div>
+          <div class="border-right border-info col col-3 text-left">--</div>
+          <div class="col col-1">--:--</div>
+        </li>
+        <li class="table-row">
+          <div class="border-right col col-2 font-weight-bold">岩谷 圭太</div>
+          <div class="border-right col col-1">在宅</div>
+          <div class="border-right col col-2">10:00/18:30</div>
+          <div class="border-right col col-1">36.7</div>
+          <div class="border-right col col-3 text-left">変化なし</div>
+          <div class="col col-1">8:03</div>
+        </li>
+        <li class="table-row text-info bg-info">
+          <div class="border-right border-info col col-2 font-weight-bold">田岡 栄治</div>
+          <div class="border-right border-info col col-1 font-weight-bold">未報告</div>
+          <div class="border-right border-info col col-2">--:--/--:--</div>
+          <div class="border-right border-info col col-1">--</div>
+          <div class="border-right border-info col col-3 text-left">--</div>
+          <div class="col col-1">--:--</div>
+        </li>
+        <li class="table-row">
+          <div class="border-right col col-2 font-weight-bold">佐々木 泰子</div>
+          <div class="border-right col col-1">在宅</div>
+          <div class="border-right col col-2">9:00/17:30</div>
+          <div class="border-right col col-1">36.5</div>
+          <div class="border-right col col-3 text-left">変化なし</div>
+          <div class="col col-1">8:02</div>
+        </li>
+        <li class="table-row text-danger bg-danger">
+          <div class="border-right border-danger col col-2 font-weight-bold">景村 良秋</div>
+          <div class="border-right border-danger col col-1">年休</div>
+          <div class="border-right border-danger col col-2">--:--/--:--</div>
+          <div class="border-right border-danger col col-1 font-weight-bold">37.5</div>
+          <div class="border-right border-danger col col-3 text-left">発熱</div>
+          <div class="col col-1">8:55</div>
+        </li>
+        <li class="table-row text-warning bg-warning">
+          <div class="border-right border-warning col col-2 font-weight-bold">橋元 由記</div>
+          <div class="border-right border-warning col col-1">出勤</div>
+          <div class="border-right border-warning col col-2">9:30/18:00</div>
+          <div class="border-right border-warning col col-1 font-weight-bold">36.9</div>
+          <div class="border-right border-warning col col-3 text-left">倦怠感</div>
+          <div class="col col-1">8:09</div>
+        </li>
+      </ul>
     </div>
   </section>
-  <!-- <footer class="py-4 border-top">
-    <div class="container">
-      <div class="text-center ">
-        <p class="mt-2">倒壊情報</p>
-        <ul class="list-unstyled text-small d-flex justify-content-center">
-          <li><a class="text-muted mr-3" href="#">メニュー</a></li>
-          <li><a class="text-muted mr-3" href="#">メニュー</a></li>
-          <li><a class="text-muted" href="#">メニュー</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer> -->
-  <style>
-    body,
-    html {
-      font-size: 16px;
-      background-color: #ffffff;
-    }
-
-    .bg-danger2 {
-    /* background-color: #ffd5d9 !important; */
-    background: linear-gradient(transparent 88%, #dc3545 0%);
-}
-    .bg-info2 {
-      /* background-color: #b1ffd7 !important; */
-      background: linear-gradient(transparent 88%, #17a2b8 0%);
-    }
-
-    .bg-warning2 {
-      /* background-color: #ffeaa9 !important; */
-      background: linear-gradient(transparent 88%, #ffc107 0%);
-    }
-  </style>
   <script src="js/jquery.slim.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
